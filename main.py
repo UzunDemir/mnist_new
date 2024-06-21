@@ -133,24 +133,24 @@ def main():
     # Note that the file URL needs to be for the `raw` file
     url = "https://github.com/Purinat33/Streamlit-MNIST/raw/master/my_mnist.h5"
     model = load_model(url, "my_mnist.h5")
-    st.sidebar.title("MNIST Playground")
+    # st.sidebar.title("MNIST Playground")
 
-    web_mode = st.sidebar.selectbox("Select Mode", ["Playground", "Demo"])
-    st.sidebar.write(
-        """
-                     The MNIST database (Modified National Institute of Standards and Technology database) is a large database of handwritten digits that is commonly used for training various image processing systems.
-                     """
-    )
+    # web_mode = st.sidebar.selectbox("Select Mode", ["Playground", "Demo"])
+    # st.sidebar.write(
+    #     """
+    #                  The MNIST database (Modified National Institute of Standards and Technology database) is a large database of handwritten digits that is commonly used for training various image processing systems.
+    #                  """
+    # )
 
-    if web_mode == "Playground":
-        # User upload/draw
-        st.header("Upload your own image!")
-        processed_imaged_url = (
-            "https://github.com/Purinat33/Streamlit-MNIST/raw/master/image_process.png"
-        )
-        example_image = load_img(processed_imaged_url, "image_process.png")
-        st.write("Example of what will happen to your uploaded file.")
-        st.image(example_image)
+    # if web_mode == "Playground":
+    #     # User upload/draw
+    #     st.header("Upload your own image!")
+    #     processed_imaged_url = (
+    #         "https://github.com/Purinat33/Streamlit-MNIST/raw/master/image_process.png"
+    #     )
+    #     example_image = load_img(processed_imaged_url, "image_process.png")
+    #     st.write("Example of what will happen to your uploaded file.")
+    #     st.image(example_image)
 
         # A part for the user to upload their own handwriting image
         st.subheader("Upload Your Digit")
