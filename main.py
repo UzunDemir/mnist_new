@@ -25,8 +25,8 @@ from keras.utils import load_img, img_to_array
 
 # import os
 # st.write('DEV')
-st.title("MNIST Handwritten Digit Prediction")
-st.write("Now you can run MNIST yourself!")
+st.title("MNIST распознание цифр")
+st.write("Протестируй работу MNIST!")
 st.divider()
 
 # IMPORTING THE MODEL
